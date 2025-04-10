@@ -20,6 +20,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     List<User> findUsersWithUniqueNames();
 
     List<User> findByOrderByUserAgeAsc();
+
     List<User> findByOrderByUserAgeDesc();
 
 
@@ -30,6 +31,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 
     @Query("SELECT u FROM User u ORDER BY LENGTH(u.userName) ASC")
     List<User> findUsersOrderedByNameLength();
+
     @Query("SELECT u FROM User u ORDER BY LENGTH(u.userName) DESC")
     List<User> findUsersOrderedByNameLengthDesc();
 }

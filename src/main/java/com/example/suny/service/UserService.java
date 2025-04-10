@@ -51,11 +51,11 @@ public class UserService implements IUserService {
     public List<User> getUsersSortedByAge() {
         return userRepository.findByOrderByUserAgeAsc();
     }
+
     @Override
     public List<User> getUsersSortedByAgeDesc() {
         return userRepository.findByOrderByUserAgeDesc();
     }
-
 
 
     @Override

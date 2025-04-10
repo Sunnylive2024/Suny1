@@ -71,15 +71,18 @@ public class Controller {
     public List<String> getUserNames() {
         return userService.getUserNames();
     }
+
     @GetMapping("/list/all")
     public List<User> getAllUsers() {
         return userService.getAllUsers();
     }
+
     @GetMapping("/list/sort/namelength/asc")
     public List<User> getUsersSortedByName() {
-         return userService.getUsersSortedByNameLength();
+        return userService.getUsersSortedByNameLength();
 
     }
+
     @GetMapping("/list/sort/namelength/desc")
     public List<User> getUsersSortedByNameDesc() {
         return userService.getUsersSortedByNameLengthDesc();

@@ -9,28 +9,30 @@ import java.util.List;
 @Service
 public interface IUserService {
 
-     User addUser(UserDto user);
-     User getUserById(Integer id);
+    User addUser(UserDto user);
 
-     User editUser(UserDto user);
+    User getUserById(Integer id);
 
-     void deleteUser(Integer userId);
+    User editUser(UserDto user);
 
-     List<User> userAgeGreaterThan(Integer userAge);
+    void deleteUser(Integer userId);
 
-     List<User> getUsersSortedByAge();
-     List<User> getUsersSortedByAgeDesc();
+    List<User> userAgeGreaterThan(Integer userAge);
 
-     List<User> getUsersWithUniqueNames();
+    List<User> getUsersSortedByAge();
 
-     List<String> getUserNames();
+    List<User> getUsersSortedByAgeDesc();
+
+    List<User> getUsersWithUniqueNames();
+
+    List<String> getUserNames();
 
 
-     User getUsersByName(String userName);
+    User getUsersByName(String userName);
 
-     List<User> getAllUsers();
+    List<User> getAllUsers();
 
-     List<User> getUsersSortedByNameLength();
+    List<User> getUsersSortedByNameLength();
 
-     List<User> getUsersSortedByNameLengthDesc();
+    List<User> getUsersSortedByNameLengthDesc();
 }
